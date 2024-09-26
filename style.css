@@ -59,6 +59,10 @@ body {
     align-self: flex-start;
 }
 
+.search {
+    margin-bottom: 39px;
+}
+
 .search__box {
     border-radius: 5px;
     background: rgb(255, 73, 73);
@@ -96,6 +100,35 @@ body {
     cursor: pointer;
 }
 
+.content__box {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+.content__main {
+    flex-grow: 1;
+}
+.content__main__title {
+    margin-top: 0;
+    margin-bottom: 25px;
+    color: rgb(0, 0, 0);
+    font-family: Inter, sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+}
+.content__cards {
+    display: flex;
+}
+
+.content__cards__item {
+    width: calc(100% / 3);
+}
+
+.content__sidebar {
+    width: 262px;
+}
+
 @media (max-width: 768px) {
     .header__controls {
         display: none;
@@ -105,5 +138,11 @@ body {
     }
     .search__box input {
         padding: 0 15px;
+    }
+    .content__box {
+        flex-direction: column;
+    }
+    .content__sidebar {
+        width: 100%;
     }
 }
