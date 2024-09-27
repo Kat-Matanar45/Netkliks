@@ -111,6 +111,7 @@ body {
 .content__main {
     flex-grow: 1;
 }
+
 .content__main__title {
     margin-top: 0;
     margin-bottom: 25px;
@@ -130,7 +131,7 @@ body {
     width: calc((100% - 60px) / 3);
     display: block;
     height: 100%;
-
+    text-decoration: none;
 }
 
 .content__cards__item__img {
@@ -148,6 +149,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     margin-bottom: 4px;
+    color:black;
 }
 
 .content__cards__item__title h4 {
@@ -243,9 +245,109 @@ body {
     color: rgb(255, 73, 73);
 }
 
+.content__movie {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    gap: 28px;
+}
+
+.content__movie__img {
+    width: calc((100% - 28px) / 2);
+    display: flex;
+    justify-content: center;
+}
+
+.content__movie__img img {
+    width: 100%;
+    display: block;
+    max-width: 450px;
+}
+
+.content__movie__info {
+    width: calc((100% - 28px) / 2);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.content__content__movie__info__title {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 3px;
+}
+
+.content__movie__info__title h1 {
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 29px;
+    margin: 0;
+}
+
+.content__movie__info__title p {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29px;
+    margin: 0;
+}
+
+.content__movie__info__description {
+    color: rgb(134, 134, 134);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    margin-bottom: 2px;
+    margin-top: 0;
+}
+
+.content__movie__info__rating {
+    color: rgb(4, 163, 30);
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 19px;
+    margin-top: 0;
+    margin-bottom: 29px;
+}
+
+.content__movie__info__text {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+.content__movie__info__content > *:last-child {
+    margin-bottom: 0;
+}
+
+.content__movie__info__controls button {
+    border-radius: 5px;
+    background: rgb(255, 73, 73);   
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    padding: 16px 98px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
 @media (max-width: 991px) {
     .content__cards__item {
         width: calc((100% - 30px) / 2);
+    }
+    .content__movie {
+        flex-direction: column;
+    }
+    .content__movie__img {
+        width: 100%;
+    }
+    .content__movie__info {
+        width: 100%;
     }
 }
 
