@@ -4,7 +4,7 @@
             <div class="content__main">
                 <h2 class="content__main__title">Результаты поиска</h2>
                 <div class="content__cards">
-                  @for (movie of movies; track movie.id) {
+                  @for (movie of movie; track movie.id) {
                   <app-card [mov] = "movie"></app-card>
                   }
                 </div>
