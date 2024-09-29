@@ -9,7 +9,7 @@ const routes: Routes = [
     component: CatalogPageComponent
   },
   {
-    path: 'film',
+    path: 'film/:id',
     component: FilmPageComponent
   }
 ];

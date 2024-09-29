@@ -6,4 +6,5 @@ export interface MovieType {
     rating: number;
     link: string;
     image: string;
+    description: string;
 }

@@ -9,6 +9,11 @@
     align-items: center;
 }
 
+.header__logo {
+    text-decoration: none;
+    color: black;
+}
+
 .header__logo h1 {
     margin: 0;
     font-size: 24px;

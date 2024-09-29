@@ -1,1 +1,30 @@
-<p>film-page works!</p>
+<section class="content">
+    <div class="container">
+        <div class="content__box">
+            <div class="content__movie">
+                @if (mov) {
+                    <div class="content__movie__img">
+                        <img [src]="mov.image" alt="Марсианин">
+                    </div>
+                    <div class="content__movie__info">
+                        <div class="content__movie__info__content">
+                            <div class="content__movie__info__title">
+                                <h1>{{mov.title}},</h1>
+                                <p>{{mov.original}}</p>
+                            </div>
+                            <p class="content__movie__info__description">{{mov.category}}</p>
+                            <p class="content__movie__info__rating">{{mov.rating}}</p>
+                            <p class="content__movie__info__text">
+                                {{mov.description}}
+                            </p>
+                        </div>
+                        <div class="content__movie__info__controls">
+                            <button>Смотреть</button>
+                        </div>
+                    </div>
+                }
+            </div>
+            <app-sidebar></app-sidebar>
+        </div>
+    </div>
+</section>
