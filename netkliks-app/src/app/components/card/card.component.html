@@ -1,11 +1,11 @@
-<a href="./movie.html" class="content__cards__item">
+<a [href]="mov.link" class="content__cards__item">
     <div class="content__cards__item__img">
-        <img src="./img/movie.png" alt="Карточка фильма">
+        <img [src]="mov.image" alt="Карточка фильма">
     </div>
     <div class="content__cards__item__title">
-        <h4>{{title}},</h4>
-        <span>The Martian 2015</span>
+        <h4>{{ mov.title }},</h4>
+        <span>{{ mov.original }}</span>
     </div>
-    <p class="content__cards__item__description">Фантастика, приключения</p>
-    <p class="content__cards__item__pating">7.8</p>
+    <p class="content__cards__item__description">{{mov.category}}</p>
+    <p class="content__cards__item__pating">{{mov.rating}}</p>
 </a>

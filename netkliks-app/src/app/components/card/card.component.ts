@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { MovieType } from '../../models/movie.models';
 
 @Component({
   selector: 'app-card',
@@ -6,5 +7,5 @@ import { Component, Input } from '@angular/core';
   styleUrl: './card.component.css'
 })
 export class CardComponent {
-  @Input() title: string = ''
+  @Input() mov!: MovieType
 }
